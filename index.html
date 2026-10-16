@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V.A Haircut & Officials | Premium Men's Salon, Gurazala</title>
+<meta name="description" content="V.A Haircut & Officials - premium men's grooming salon on Karempudi Road, Gurazala. Haircut, beard, facial, de-tan and more. Book on WhatsApp.">
+<meta name="theme-color" content="#556B2F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-blob"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="V.A Haircut & Officials home">
+      <div class="logo-mark">VA</div>
+      <span class="full">V.A Haircut &amp; Officials<small>Men's Grooming</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#packages">Packages</a>
+      <a class="link" href="#book">Book Appointment</a>
+      <a class="link" href="#gallery">Gallery</a>
+    <a class="link" href="#location">Location</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-outline btn-sm hide-m" id="adminBtn" type="button">🔐 Admin Login</button>
+      <a class="btn btn-primary btn-sm" href="tel:7330947785">📞 Call Now</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="link" href="#services">Services</a>
+    <a class="link" href="#packages">Packages</a>
+    <a class="link" href="#book">Book Appointment</a>
+    <a class="link" href="#location">Location</a>
+    <button class="btn btn-outline" id="adminBtnM" type="button">🔐 Admin Login</button>
+  </div>
+</header>
+
+<main id="home">
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">✂️ Premium Men's Grooming</span>
+      <h1>Look Sharp, Feel Fresh at <span>Gurazala's Premier Grooming Salon</span></h1>
+      <p class="lead">Expert styling, spotless hygiene and a relaxed, contemporary interior — every cut, shave and facial is done with precision by Vamsi and team.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.200-3.500-8.500zM12 22c-1.800 0-3.600-.5-5.100-1.400l-.4-.2-3.700 1 1-3.600-.2-.4A10 10 0 0 1 2 12C2 6.500 6.500 2 12 2s10 4.500 10 10-4.500 10-10 10zm5.500-7.500c-.3-.1-1.800-.9-2-1s-.5-.1-.7.1-.8 1-1 1.200-.4.200-.7.100a8.200 8.200 0 0 1-4-3.500c-.3-.5.300-.5.900-1.600.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100 2.100 3.300 5.200 4.600c.7.300 1.300.5 1.700.6.700.2 1.400.2 1.900.1.600-.1 1.800-.7 2-1.400s.3-1.300.2-1.400-.3-.2-.6-.3z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="#services" class="btn btn-outline">View Services</a>
+      </div>
+      <div class="badge-line"><span>📍 Karempudi Road, Gurazala</span><span>📞 733 094 7785</span></div>
+    </div>
+    <aside class="hero-card" aria-label="Why choose us">
+      <h3>Why men choose V.A Haircut &amp; Officials</h3>
+      <ul>
+        <li><i class="tick">✓</i><span><b>Expert styling</b> — modern fades, classic cuts &amp; sharp beard shapes.</span></li>
+        <li><i class="tick">✓</i><span><b>Hygiene first</b> — sanitised tools and fresh towels for every client.</span></li>
+        <li><i class="tick">✓</i><span><b>Comfort &amp; calm</b> — clean, air-friendly interior to unwind in.</span></li>
+        <li><i class="tick">✓</i><span><b>Honest pricing</b> — clear rates, no surprises at the counter.</span></li>
+      </ul>
+      <div class="hero-stats">
+        <div class="stat"><b>₹49</b><span>Services from</span></div>
+        <div class="stat"><b>17+</b><span>Grooming options</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FEATURED SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Most Loved</span>
+      <h2>Highlighted Services</h2>
+      <p>Our signature favourites — pick one and we'll pre-fill your booking.</p>
+    </div>
+    <div class="feat-grid" id="featGrid"></div>
+  </div>
+</section>
+
+<!-- FULL MENU -->
+<section id="packages">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Salon Menu</span>
+      <h2>Complete Price List</h2>
+      <p>Everyday grooming, skin care and relaxing head treatments at friendly prices.</p>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Book Appointment</span>
+      <h2>Reserve Your Slot in 30 Seconds</h2>
+      <p>Fill the form — we save your booking and open WhatsApp so Vamsi can confirm instantly.</p>
+    </div>
+    <div class="book-wrap">
+      <form id="bookForm" class="glass" novalidate>
+        <div class="row2">
+          <div class="field">
+            <label for="bName">Full Name</label>
+            <input type="text" id="bName" name="name" autocomplete="name" placeholder="Enter your full name" maxlength="60" required>
+            <div class="err" id="eName"></div>
+          </div>
+          <div class="field">
+            <label for="bPhone">Phone Number</label>
+            <input type="tel" id="bPhone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile number" maxlength="14" required>
+            <div class="err" id="ePhone"></div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="bDate">Preferred Date</label>
+            <input type="date" id="bDate" name="date" required>
+            <div class="err" id="eDate"></div>
+          </div>
+          <div class="field">
+            <label for="bTime">Preferred Time Slot</label>
+            <select id="bTime" name="time" required></select>
+            <div class="err" id="eTime"></div>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:6px">
+          <span class="legend">Select Services</span>
+        </div>
+        <div id="svcBoxes"></div>
+        <div class="err" id="eSvc"></div>
+        <div class="total-bar" aria-live="polite">
+          <div><small id="selCount">0 services selected</small><br><small>Estimated Total</small></div>
+          <b id="totalAmt">₹0</b>
+        </div>
+        <button type="submit" class="btn btn-wa btn-block">Confirm &amp; Send on WhatsApp</button>
+        <p class="hint" style="margin-top:10px;text-align:center">Final price may vary slightly based on style &amp; hair length.</p>
+      </form>
+
+      <aside class="side glass">
+        <h3>How it works</h3>
+        <ol class="steps">
+          <li><i>1</i><span>Choose your services &amp; preferred slot.</span></li>
+          <li><i>2</i><span>Tap confirm — WhatsApp opens with your details ready.</span></li>
+          <li><i>3</i><span>Vamsi confirms your slot. Walk in and relax.</span></li>
+        </ol>
+        <div class="confirm-card" id="confirmCard" role="status">
+          <h4>✅ Appointment Request Saved</h4>
+          <dl id="confirmDl"></dl>
+          <a class="btn btn-wa btn-sm btn-block" id="confirmWa" href="#" target="_blank" rel="noopener" style="margin-top:12px">Open WhatsApp again</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN DASHBOARD -->
+<section id="admin" aria-label="Admin dashboard">
+  <div class="container">
+    <div class="admin-bar">
+      <div>
+        <span class="eyebrow">Admin Portal</span>
+        <h2>Bookings Dashboard</h2>
+      </div>
+      <div class="row-actions">
+        <button class="btn btn-primary btn-sm" id="exportBtn" type="button">⬇ Export to CSV</button>
+        <button class="btn btn-danger btn-sm" id="clearBtn" type="button">🗑 Clear All</button>
+        <button class="btn btn-outline btn-sm" id="logoutBtn" type="button">Logout</button>
+      </div>
+    </div>
+    <div class="stats3">
+      <div class="glass stat-card"><small>Total Bookings</small><b id="stTotal">0</b></div>
+      <div class="glass stat-card"><small>Today's Appointments</small><b id="stToday">0</b></div>
+      <div class="glass stat-card"><small>Revenue Estimate</small><b id="stRev">₹0</b></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Client</th><th>Phone</th><th>Date</th><th>Time</th><th>Services</th><th>Price</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="adminRows"></tbody>
+      </table>
+    </div>
+    <p class="hint" style="margin-top:10px">Revenue estimate counts Pending + Completed bookings (Cancelled are excluded). Data is stored in this browser's localStorage.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Space</span>
+      <h2>Step Inside the Salon</h2>
+      <p>A clean, cool and comfortable interior with premium barber chairs, round mirrors and everything within reach.</p>
+    </div>
+    <div class="gallery-grid">
+      <button type="button" class="glass gallery-item reveal" id="galleryOpen" aria-label="View salon photo full screen">
+        <img src="images/salon-interior.jpg" alt="Interior of V.A Haircut &amp; Officials with two premium barber chairs, round mirrors and product shelves" loading="lazy" width="1086" height="1448">
+        <span class="gallery-cap">🔍 Tap to enlarge</span>
+      </button>
+      <div class="glass gallery-info reveal">
+        <h3>Premium chairs. Fresh air. Zero rush.</h3>
+        <ul>
+          <li><i class="tick">✓</i><span>Two classic chrome-finish barber chairs</span></li>
+          <li><i class="tick">✓</i><span>Round mirrors &amp; neatly stocked product shelves</span></li>
+          <li><i class="tick">✓</i><span>Wall fans and a TV to keep you cool and entertained</span></li>
+          <li><i class="tick">✓</i><span>Spotless polished floor and a calm, modern look</span></li>
+        </ul>
+        <a href="#book" class="btn btn-primary">Book Your Chair</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2>Visit the Salon</h2>
+      <p>Right on Karempudi Road in Gurazala — easy to reach, easy to park.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="glass loc-info">
+        <div class="info-row"><div class="ico">📍</div><div><b>Address</b><span>V.A Haircut &amp; Officials,<br>Karempudi Road, Gurazala</span></div></div>
+        <div class="info-row"><div class="ico">📞</div><div><b>Call / WhatsApp</b><a href="tel:7330947785">733 094 7785</a></div></div>
+        <div class="info-row"><div class="ico">🕘</div><div><b>Working Hours</b><span>Mon – Sun: 9:00 AM – 9:00 PM</span></div></div>
+        <div class="info-row"><div class="ico">👤</div><div><b>Owner</b><span>Vamsi</span></div></div>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Karempudi+Road+Gurazala">Get Directions</a>
+      </div>
+      <div class="map">
+        <iframe title="Map of V.A Haircut & Officials, Karempudi Road, Gurazala" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Karempudi%20Road%20Gurazala&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px"><div class="logo-mark" style="background:#fff;color:var(--olive-dd)">VA</div><span>V.A Haircut &amp; Officials</span></div>
+        <p>Premium men's grooming in Gurazala. Sharp cuts, clean shaves and fresh skin — done right.</p>
+        <div class="socials">
+          <a href="https://wa.me/917330947785" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:7330947785">Call</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Karempudi+Road+Gurazala" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Karempudi Road, Gurazala</li>
+          <li>📞 <a href="tel:7330947785">733 094 7785</a></li>
+          <li>👤 Owner: Vamsi</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Working Hours</h4>
+        <ul>
+          <li>Monday – Sunday</li>
+          <li>9:00 AM – 9:00 PM</li>
+          <li><a href="#book">Book your slot →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr"></span> V.A Haircut &amp; Officials. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/917330947785?text=Hello%20Vamsi%20brother%2C%20I%20would%20like%20to%20know%20more%20about%20V.A%20Haircut%20%26%20Officials." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.500 3.500A11.800 11.800 0 0 0 12 0C5.400 0 0 5.400 0 12c0 2.100.6 4.200 1.600 6L0 24l6.200-1.600A12 12 0 0 0 12 24c6.600 0 12-5.400 12-12 0-3.200-1.200-6.200-3.500-8.500zM12 22c-1.800 0-3.600-.5-5.100-1.400l-.4-.2-3.700 1 1-3.600-.2-.4A10 10 0 0 1 2 12C2 6.500 6.500 2 12 2s10 4.500 10 10-4.500 10-10 10zm5.500-7.500c-.3-.1-1.800-.9-2-1s-.5-.1-.7.1-.8 1-1 1.200-.4.200-.7.100a8.200 8.200 0 0 1-4-3.500c-.3-.5.300-.5.900-1.600.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100 2.100 3.300 5.200 4.600c.7.300 1.300.5 1.700.6.700.2 1.400.2 1.900.1.600-.1 1.800-.7 2-1.400s.3-1.300.2-1.400-.3-.2-.6-.3z"/></svg>
+</a>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="modal lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Salon photo">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Close photo">✕</button>
+  <img src="images/salon-interior.jpg" alt="Interior of V.A Haircut &amp; Officials salon">
+</div>
+
+<!-- PIN MODAL -->
+<div class="modal" id="pinModal" role="dialog" aria-modal="true" aria-labelledby="pinTitle">
+  <div class="modal-box">
+    <h3 id="pinTitle">🔐 Admin Portal</h3>
+    <p>Enter your 4-digit PIN to view bookings.</p>
+    <form id="pinForm" style="padding:0" novalidate>
+      <div class="field" style="margin-bottom:6px">
+        <input type="password" id="pinInput" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="• • • •" aria-label="Admin PIN" style="text-align:center;letter-spacing:.6em;font-size:1.3rem">
+        <div class="err" id="ePin"></div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" id="pinCancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Unlock</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- CONFIRM MODAL -->
+<div class="modal" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="cmTitle">
+  <div class="modal-box">
+    <h3 id="cmTitle">Are you sure?</h3>
+    <p id="cmText"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-outline" id="cmNo">Cancel</button>
+      <button type="button" class="btn btn-primary" id="cmYes" style="background:#b91c1c;box-shadow:none">Yes, continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
